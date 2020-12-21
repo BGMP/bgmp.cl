@@ -1,0 +1,5 @@
+maven.bgmp.cl {
+        root /var/www/html
+        tls jose@bgmp.cl
+        browse / /var/www/html/Caddyr/caddyr.tpl
+}

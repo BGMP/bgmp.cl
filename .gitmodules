@@ -1,0 +1,3 @@
+[submodule "Caddyr"]
+	path = Caddyr
+	url = https://github.com/pchampio/Caddyr
