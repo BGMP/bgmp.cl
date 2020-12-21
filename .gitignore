@@ -8,3 +8,5 @@
 *~
 *.swp
 
+# Repository directory
+repo/
