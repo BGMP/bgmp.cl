@@ -1,0 +1,18 @@
+%nav.navbar.navbar-default.navbar-static-top
+  %div.container
+    %div.navbar-header
+      %button.navbar-toggle.collapsed{ :id => "top-navbar-collapse-button",
+                                       :"data-target" => "#top-navbar-collapse",
+                                       :"data-toggle" => "collapse" }
+        %span.fa.fa-bars
+      %a.navbar-brand{ :href => "/" }
+        %img.pull-left{ :height => "34",
+                        :src => "https://avatars2.githubusercontent.com/u/47787902?s=200&v=4",
+                        :alt => "" }
+        BGMBox
+    %div.navbar-collapse.collapse{ :id => "top-navbar-collapse" }
+      %ul.nav.navbar-nav{ :style => "margin-right: 0;" }
+        %li
+          %a{ :href => "https://bgmp.cl/repo" }
+            %i.fa.fa-folder-open{ :"aria-hidden" => "true" }
+            Maven

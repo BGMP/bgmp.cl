@@ -10,3 +10,7 @@
 
 # Repository directory
 repo/
+
+# StaticMatic
+build/
+config/amazon.yml
