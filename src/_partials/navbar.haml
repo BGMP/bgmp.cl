@@ -10,9 +10,23 @@
                         :src => "https://avatars2.githubusercontent.com/u/47787902?s=200&v=4",
                         :alt => "" }
         BGMBox
-    %div.navbar-collapse.collapse{ :id => "top-navbar-collapse" }
+    %div.navbar-collapse.collapse#top-navbar-collapse
       %ul.nav.navbar-nav{ :style => "margin-right: 0;" }
-        %li
-          %a{ :href => "https://bgmp.cl/repo" }
-            %i.fa.fa-folder-open{ :"aria-hidden" => "true" }
+        %li.dropdown
+          %a.dropdown-toggle#maven-dropdown{ :href => "#",
+                                             :"data-toggle" => "dropdown",
+                                             :role => "button",
+                                             :"aria-haspopup" => "true",
+                                             :"aria-expanded" => "false" }
+            %i.fa.fa-folder-open
             Maven
+            %b.caret
+          %ul.dropdown-menu{ :"aria-labelledby" => "maven-dropdown" }
+            %li
+              %a{ :href => "https://maven.bgmp.cl" }
+                %i.fa.fa-bookmark
+                Overview
+            %li
+              %a{ :href => "https://maven.bgmp.cl/repo" }
+                %i.fa.fa-file-code-o
+                Browse
