@@ -12,6 +12,13 @@ My personal website, maven repository, and perhaps a blog in the near future.
 
 Maven repository.
 
+```xml
+<repository>
+    <id>bgm</id>
+    <url>https://maven.bgmp.cl/repo/</url>
+</repository>
+```
+
 ### Software
 
 All software used to run this maven repository.
