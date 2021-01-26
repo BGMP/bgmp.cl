@@ -28,7 +28,7 @@
 
     %script hljs.initHighlightingOnLoad();
     %script $(function () { $("[data-toggle='tooltip']").tooltip(); });
-    %script $(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });
+    %script $(document).ready(function() { $('span.highlight > code').each(function(i, block) { hljs.highlightBlock(block); }); });
 
   %body
     = partial "navbar"
