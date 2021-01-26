@@ -1,0 +1,44 @@
+%section
+  .page-header
+    %h2
+      %i.fa.fa-bookmark
+      Maven Repository Overview
+  .page-header
+    %p This is the maven repository where all the binaries I may work with will end up living at, and therefore I have decided to make a nice, tidy place out of it.
+    %p You may browse the repository by clicking <a href="https://maven.bgmp.cl/repo/">here</a>.
+  .row
+    .col-md-12
+      :markdown
+
+        Maven <code>pom.xml</code>:
+
+        ```
+        <repository>
+          <id>bgm</id>
+          <url>https://maven.bgmp.cl/repo/</url>
+        </repository>
+        ```
+
+        <br/>
+
+        Groovy <code>build.gradle</code>:
+
+        ```
+        repositories {
+          bgm {
+            url "https://maven.bgmp.cl/repo/"
+          }
+        }
+        ```
+
+        <br/>
+
+        Kotlin <code>build.gradle.kt</code>:
+
+        ```
+        repositories {
+          bgm {
+            url = uri("https://maven.bgmp.cl/repo/")
+          }
+        }
+        ```
