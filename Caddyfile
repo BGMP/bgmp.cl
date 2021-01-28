@@ -1,5 +1,10 @@
 bgmp.cl {
-        root /var/www/
-        browse / /var/www/Caddyr/caddyr.tpl
+        root /home/bgm/bgmp.cl/build
+        tls jose@bgmp.cl
+}
+
+maven.bgmp.cl {
+        root /home/bgm/repo/
+        browse / /home/bgm/repo/Caddyr/caddyr.tpl
         tls jose@bgmp.cl
 }
