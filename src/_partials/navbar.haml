@@ -7,11 +7,15 @@
         %span.fa.fa-bars
       %a.navbar-brand{ :href => "/" }
         %img.pull-left{ :height => "34",
-                        :src => "https://avatars2.githubusercontent.com/u/47787902?s=200&v=4",
+                        :src => "/assets/img/bgmbox.png",
                         :alt => "" }
         BGMBox
     %div.navbar-collapse.collapse#top-navbar-collapse
       %ul.nav.navbar-nav{ :style => "margin-right: 0;" }
+        %li
+          %a{:href => "/projects"}
+            %i.fa.fa-briefcase
+            Projects
         %li.dropdown
           %a.dropdown-toggle#maven-dropdown{ :href => "#",
                                              :"data-toggle" => "dropdown",
@@ -23,7 +27,7 @@
             %b.caret
           %ul.dropdown-menu{ :"aria-labelledby" => "maven-dropdown" }
             %li
-              %a{ :href => "https://bgmp.cl/maven/" }
+              %a{ :href => "/maven" }
                 %i.fa.fa-bookmark
                 Overview
             %li

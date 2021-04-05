@@ -1,0 +1,33 @@
+.row.text-center
+  .col-md-12
+    .thumbnail.small-thumbnail
+      %a{ :href => "/projects/4discord" }
+        %img{ :src => "/assets/img/4discord.png" }
+
+.row
+  .col-md-12
+    .tabbable
+      %ul.nav.nav-tabs.hidden-sm.hidden-xs
+        %li.active
+          %a{ :href => "#about", :"data-toggle" => "tab", :"aria-expanded" => "true" }
+            About
+        %li
+          %a{ :href => "#contact", :"data-toggle" => "tab", :"aria-expanded" => "true" }
+            Contact
+        %li
+          %a{ :href => "#licence", :"data-toggle" => "tab", :"aria-expanded" => "true" }
+            Licence
+        %li
+          %a{ :href => "#data", :"data-toggle" => "tab", :"aria-expanded" => "true" }
+            Data Collection
+    .tab-content{ :style => "overflow: visible;" }
+      .tab-pane.active#about
+        = partial "4discord/about"
+      .tab-pane#contact
+        = partial "4discord/contact"
+      .tab-pane#licence
+        = partial "licence/MIT"
+        %a{ :href => "https://github.com/BGMP/4discord/blob/master/LICENCE.md", :target => "_blank" }
+          %i.fa.fa-github{ :"aria-hidden" => "true" }
+      .tab-pane#data
+        = partial "4discord/data"
