@@ -13,4 +13,5 @@ repo/
 
 # StaticMatic
 build/
+.sass-cache
 config/amazon.yml

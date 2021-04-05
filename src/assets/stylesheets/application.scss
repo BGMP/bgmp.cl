@@ -382,7 +382,7 @@ pre {
     border-radius: 4px;
 }
 
-pre > h1, h2, h3 {
+.about-me h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -397,4 +397,42 @@ pre.about-me, .about-me pre {
 
 .about-me .btn {
     white-space: normal;
+}
+
+.thumbnail {
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    height: 50%;
+    width: 50%;
+}
+
+.small-thumbnail {
+    height: 20%;
+    width: 20%;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+    text-align: center;
+}
+
+.thumbnail h1 {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
 }
