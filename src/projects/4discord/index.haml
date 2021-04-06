@@ -4,30 +4,72 @@
       %a{ :href => "/projects/4discord" }
         %img{ :src => "/assets/img/4discord.png" }
 
-.row
-  .col-md-12
-    .tabbable
-      %ul.nav.nav-tabs.hidden-sm.hidden-xs
-        %li.active
-          %a{ :href => "#about", :"data-toggle" => "tab", :"aria-expanded" => "true" }
-            About
-        %li
-          %a{ :href => "#contact", :"data-toggle" => "tab", :"aria-expanded" => "true" }
-            Contact
-        %li
-          %a{ :href => "#licence", :"data-toggle" => "tab", :"aria-expanded" => "true" }
-            Licence
-        %li
-          %a{ :href => "#data", :"data-toggle" => "tab", :"aria-expanded" => "true" }
-            Data Collection
-    .tab-content{ :style => "overflow: visible;" }
-      .tab-pane.active#about
-        = partial "4discord/about"
-      .tab-pane#contact
-        = partial "4discord/contact"
-      .tab-pane#licence
-        = partial "licence/MIT"
-        %a{ :href => "https://github.com/BGMP/4discord/blob/master/LICENCE.md", :target => "_blank" }
-          %i.fa.fa-github{ :"aria-hidden" => "true" }
-      .tab-pane#data
-        = partial "4discord/data"
+%section
+  .row
+    .col-md-12
+      .tabbable
+        %ul.nav.nav-tabs.hidden-sm.hidden-xs#stuffs-tab
+          %li.active
+            %a{ :href => "#about", :"data-toggle" => "tab" } About
+          %li
+            %a{ :href => "#contact", :"data-toggle" => "tab" } Contact
+          %li
+            %a{ :href => "#licence", :"data-toggle" => "tab" } Licence
+          %li
+            %a{ :href => "#data", :"data-toggle" => "tab" } Data Collection
+
+        .panel-group.visible-sm.visible-xs#stuffs-tab-accordion
+          .panel.panel-default
+            .panel-heading
+              %h4.panel-title
+                %a.js-tablecollapse-panel-heading{ :"data-toggle" => "collapse",
+                                                   :href => "#about-collapse",
+                                                   :"data-parent" => "#stuffs-tab-accordion",
+                                                   :"aria-expanded" => "true" }
+                  About
+            .panel-collapse.collapse.in#about-collapse
+              .panel-body.js-tablecollapse-panel-body
+                = partial "4discord/about"
+          .panel.panel-default
+            .panel-heading
+              %h4.panel-title
+                %a.js-tablecollapse-panel-heading{ :"data-toggle" => "collapse",
+                                                   :href => "#contact-collapse",
+                                                   :"data-parent" => "#stuffs-tab-accordion",
+                                                   :"aria-expanded" => "false" }
+                  Contact
+            .panel-collapse.collapse#contact-collapse
+              .panel-body.js-tablecollapse-panel-body
+                = partial "4discord/contact"
+          .panel.panel-default
+            .panel-heading
+              %h4.panel-title
+                %a.js-tablecollapse-panel-heading{ :"data-toggle" => "collapse",
+                                                   :href => "#licence-collapse",
+                                                   :"data-parent" => "#stuffs-tab-accordion",
+                                                   :"aria-expanded" => "false" }
+                  Licence
+            .panel-collapse.collapse#licence-collapse
+              .panel-body.js-tablecollapse-panel-body
+                = partial "licence/MIT"
+          .panel.panel-default
+            .panel-heading
+              %h4.panel-title
+                %a.js-tablecollapse-panel-heading{ :"data-toggle" => "collapse",
+                                                   :href => "#data-collapse",
+                                                   :"data-parent" => "#stuffs-tab-accordion",
+                                                   :"aria-expanded" => "false" }
+                  Data Collection
+            .panel-collapse.collapse#data-collapse
+              .panel-body.js-tablecollapse-panel-body
+                = partial "4discord/data"
+
+        .tab-content.hidden-sm.hidden-xs{ :style => "overflow: visible;"}
+          .tab-pane.active#about
+            = partial "4discord/about"
+          .tab-pane#contact
+            = partial "4discord/contact"
+          .tab-pane#licence
+            = partial "licence/MIT"
+          .tab-pane#data
+            = partial "4discord/data"
