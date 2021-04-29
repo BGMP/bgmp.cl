@@ -1,24 +1,67 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    airbrussh (1.4.0)
+      sshkit (>= 1.6.1, != 1.7.0)
+    ast (2.4.2)
     aws-s3 (0.6.3)
       builder
       mime-types
       xml-simple
+    bcrypt_pbkdf (1.1.0-x64-mingw32)
     builder (3.2.4)
+    capistrano (3.16.0)
+      airbrussh (>= 1.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-bundler (2.0.1)
+      capistrano (~> 3.1)
     chunky_png (1.4.0)
     compass (0.12.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
+    concurrent-ruby (1.1.8)
+    ed25519 (1.2.4)
     fssm (0.2.10)
     haml (3.1.8)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2020.1104)
+    mime-types-data (3.2021.0225)
+    net-scp (3.0.0)
+      net-ssh (>= 2.6.5, < 7.0.0)
+    net-ssh (6.1.0)
+    parallel (1.20.1)
+    parser (3.0.1.0)
+      ast (~> 2.4.1)
     rack (2.2.3)
+    rainbow (3.0.0)
+    rake (13.0.3)
     rdiscount (2.2.0.2)
+    regexp_parser (2.1.1)
+    rexml (3.2.5)
+    rubocop (1.13.0)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.2.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.4.1)
+      parser (>= 2.7.1.5)
+    ruby-progressbar (1.11.0)
+    rvm1-capistrano3 (1.4.0)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2)
     sass (3.2.19)
+    sshkit (1.21.2)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     staticmatic3 (2.1.10)
       aws-s3 (~> 0.6.3)
       compass (~> 0.12.1)
@@ -29,14 +72,21 @@ GEM
       tilt (~> 1.3, <= 1.4.1)
     thor (1.1.0)
     tilt (1.4.1)
+    unicode-display_width (2.0.0)
     xml-simple (1.1.8)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bcrypt_pbkdf (>= 1.0, < 2.0)
+  capistrano (~> 3.14)
+  capistrano-bundler (~> 2.0)
+  ed25519 (>= 1.2, < 2.0)
   rdiscount (~> 2.2, >= 2.2.0.2)
+  rubocop
+  rvm1-capistrano3
   staticmatic3 (= 2.1.10)
 
 BUNDLED WITH
-   2.1.4
+   2.2.16

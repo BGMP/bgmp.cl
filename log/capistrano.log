@@ -1,0 +1,536 @@
+# Logfile created on 2021-04-29 18:15:41 -0400 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-29 18:15:41 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [eb683345] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/ as deploy@network.bgmp.cl
+ DEBUG [eb683345] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/
+  INFO [eb683345] Finished in 2.875 seconds with exit status 0 (successful).
+ DEBUG Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [2438d0b1] Running /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh as deploy@network.bgmp.cl
+ DEBUG [2438d0b1] Command: /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh
+  INFO [2438d0b1] Finished in 0.553 seconds with exit status 0 (successful).
+  INFO [3b8772e9] Running /usr/bin/env mkdir -p /tmp as deploy@network.bgmp.cl
+ DEBUG [3b8772e9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3b8772e9] Finished in 0.535 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ac585350ee6f6740ad1e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ac585350ee6f6740ad1e.sh 100.0%
+  INFO [74f9fafe] Running /usr/bin/env chmod 700 /tmp/git-ssh-ac585350ee6f6740ad1e.sh as deploy@network.bgmp.cl
+ DEBUG [74f9fafe] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ac585350ee6f6740ad1e.sh
+  INFO [74f9fafe] Finished in 0.520 seconds with exit status 0 (successful).
+  INFO [7a5708c4] Running /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD as deploy@network.bgmp.cl
+ DEBUG [7a5708c4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac585350ee6f6740ad1e.sh" ; /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD )
+ DEBUG [7a5708c4] 	03914e09f19841a2c617b7b2bdaf76668f8eb6eb
+ DEBUG [7a5708c4] 		HEAD
+  INFO [7a5708c4] Finished in 0.977 seconds with exit status 0 (successful).
+  INFO [26399a5e] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases as deploy@network.bgmp.cl
+ DEBUG [26399a5e] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases
+  INFO [26399a5e] Finished in 0.501 seconds with exit status 0 (successful).
+  INFO [0f6c89ea] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
+ DEBUG [0f6c89ea] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
+  INFO [0f6c89ea] Finished in 0.532 seconds with exit status 0 (successful).
+  INFO [03893863] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared as deploy@network.bgmp.cl
+ DEBUG [03893863] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared
+  INFO [03893863] Finished in 0.587 seconds with exit status 0 (successful).
+ DEBUG [e2662f3e] Running [ -f /home/deploy/bgmp.cl/shared/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [e2662f3e] Command: [ -f /home/deploy/bgmp.cl/shared/Caddyfile ]
+ DEBUG [e2662f3e] Finished in 0.551 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/bgmp.cl/shared/Caddyfile does not exist on network.bgmp.cl
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-29 18:27:27 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2d532a36] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/ as deploy@network.bgmp.cl
+ DEBUG [2d532a36] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/
+  INFO [2d532a36] Finished in 2.692 seconds with exit status 0 (successful).
+ DEBUG Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [7689d1a1] Running /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh as deploy@network.bgmp.cl
+ DEBUG [7689d1a1] Command: /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh
+  INFO [7689d1a1] Finished in 0.532 seconds with exit status 0 (successful).
+  INFO [869e1669] Running /usr/bin/env mkdir -p /tmp as deploy@network.bgmp.cl
+ DEBUG [869e1669] Command: /usr/bin/env mkdir -p /tmp
+  INFO [869e1669] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f740bc0ecf924875f793.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f740bc0ecf924875f793.sh 100.0%
+  INFO [91c40470] Running /usr/bin/env chmod 700 /tmp/git-ssh-f740bc0ecf924875f793.sh as deploy@network.bgmp.cl
+ DEBUG [91c40470] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f740bc0ecf924875f793.sh
+  INFO [91c40470] Finished in 0.527 seconds with exit status 0 (successful).
+  INFO [5ae9523e] Running /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD as deploy@network.bgmp.cl
+ DEBUG [5ae9523e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD )
+ DEBUG [5ae9523e] 	03914e09f19841a2c617b7b2bdaf76668f8eb6eb
+ DEBUG [5ae9523e] 		HEAD
+  INFO [5ae9523e] Finished in 0.973 seconds with exit status 0 (successful).
+  INFO [76fb97ec] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases as deploy@network.bgmp.cl
+ DEBUG [76fb97ec] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases
+  INFO [76fb97ec] Finished in 0.483 seconds with exit status 0 (successful).
+  INFO [4c540137] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
+ DEBUG [4c540137] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
+  INFO [4c540137] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [317b2328] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared as deploy@network.bgmp.cl
+ DEBUG [317b2328] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared
+  INFO [317b2328] Finished in 0.535 seconds with exit status 0 (successful).
+ DEBUG [29994c2a] Running [ -f /home/deploy/bgmp.cl/shared/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [29994c2a] Command: [ -f /home/deploy/bgmp.cl/shared/Caddyfile ]
+ DEBUG [29994c2a] Finished in 0.548 seconds with exit status 0 (successful).
+ DEBUG [d1d12f15] Running [ -f /home/deploy/bgmp.cl/current/REVISION ] as deploy@network.bgmp.cl
+ DEBUG [d1d12f15] Command: [ -f /home/deploy/bgmp.cl/current/REVISION ]
+ DEBUG [d1d12f15] Finished in 0.535 seconds with exit status 1 (failed).
+ DEBUG [724e2ab2] Running [ -f /home/deploy/bgmp.cl/repo/HEAD ] as deploy@network.bgmp.cl
+ DEBUG [724e2ab2] Command: [ -f /home/deploy/bgmp.cl/repo/HEAD ]
+ DEBUG [724e2ab2] Finished in 0.519 seconds with exit status 1 (failed).
+ DEBUG [4f451ba0] Running if test ! -d /home/deploy/bgmp.cl; then echo "Directory does not exist '/home/deploy/bgmp.cl'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [4f451ba0] Command: if test ! -d /home/deploy/bgmp.cl; then echo "Directory does not exist '/home/deploy/bgmp.cl'" 1>&2; false; fi
+ DEBUG [4f451ba0] Finished in 0.522 seconds with exit status 0 (successful).
+  INFO [24ae458b] Running /usr/bin/env git clone --mirror git@github.com:BGMP/bgmp.cl.git /home/deploy/bgmp.cl/repo as deploy@network.bgmp.cl
+ DEBUG [24ae458b] Command: cd /home/deploy/bgmp.cl && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env git clone --mirror git@github.com:BGMP/bgmp.cl.git /home/deploy/bgmp.cl/repo )
+ DEBUG [24ae458b] 	Cloning into bare repository '/home/deploy/bgmp.cl/repo'...
+ DEBUG [24ae458b] 	
+ DEBUG [24ae458b] 	remote: Enumerating objects: 233, done.[K
+ DEBUG [24ae458b] 	
+ DEBUG [24ae458b] 	remote: Counting objects:   0% (1/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   1% (3/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   2% (5/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   3% (7/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   4% (10/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   5% (12/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   6% (14/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   7% (17/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   8% (19/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:   9% (21/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  10% (24/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  11% (26/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  12% (28/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  13% (31/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  14% (33/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  15% (35/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  16% (38/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  17% (40/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  18% (42/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  19% (45/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  20% (47/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  21% (49/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  22% (52/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  23% (54/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  24% (56/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  25% (59/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  26% (61/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  27% (63/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  28% (66/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  29% (68/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  30% (70/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  31% (73/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  32% (75/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  33% (77/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  34% (80/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  35% (82/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  36% (84/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  37% (87/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  38% (89/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  39% (91/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  40% (94/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  41% (96/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  42% (98/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  43% (101/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  44% (103/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  45% (105/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  46% (108/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  47% (110/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  48% (112/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  49% (115/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  50% (117/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  51% (119/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  52% (122/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  53% (124/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  54% (126/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  55% (129/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  56% (131/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  57% (133/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  58% (136/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  59% (138/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  60% (140/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  61% (143/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  62% (145/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  63% (147/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  64% (150/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  65% (152/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  66% (154/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  67% (157/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  68% (159/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  69% (161/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  70% (164/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  71% (166/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  72% (168/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  73% (171/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  74% (173/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  75% (175/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  76% (178/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  77% (180/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  78% (182/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  79% (185/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  80% (187/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  81% (189/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  82% (192/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  83% (194/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  84% (196/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  85% (199/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  86% (201/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  87% (203/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  88% (206/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  89% (208/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  90% (210/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  91% (213/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  92% (215/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  93% (217/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  94% (220/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  95% (222/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  96% (224/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  97% (227/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  98% (229/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects:  99% (231/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects: 100% (233/233)[K
+ DEBUG [24ae458b] 	remote: Counting objects: 100% (233/233), done.[K
+ DEBUG [24ae458b] 	
+ DEBUG [24ae458b] 	remote: Compressing objects:   0% (1/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   1% (2/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   2% (4/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   3% (5/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   4% (7/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   5% (8/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   6% (10/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   7% (11/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   8% (13/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:   9% (15/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  10% (16/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  11% (18/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  12% (19/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  13% (21/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  14% (22/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  15% (24/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  16% (25/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  17% (27/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  18% (29/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  19% (30/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  20% (32/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  21% (33/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  22% (35/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  23% (36/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  24% (38/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  25% (39/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  26% (41/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  27% (43/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  28% (44/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  29% (46/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  30% (47/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  31% (49/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  32% (50/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  33% (52/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  34% (54/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  35% (55/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  36% (57/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  37% (58/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  38% (60/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  39% (61/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  40% (63/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  41% (64/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  42% (66/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  43% (68/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  44% (69/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  45% (71/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  46% (72/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  47% (74/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  48% (75/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  49% (77/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  50% (78/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  51% (80/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  52% (82/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  53% (83/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  54% (85/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  55% (86/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  56% (88/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  57% (89/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  58% (91/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  59% (93/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  60% (94/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  61% (96/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  62% (97/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  63% (99/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  64% (100/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  65% (102/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  66% (103/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  67% (105/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  68% (107/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  69% (108/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  70% (110/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  71% (111/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  72% (113/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  73% (114/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  74% (116/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  75% (117/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  76% (119/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  77% (121/156)[Kremote: Compressing objects:  78% (122/156)[Kremote: Compressing objects:  79% (124/156)[Kremote: Compressing objects:  80% (125/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  81% (127/156)[Kremote: Compressing objects:  82% (128/156)[Kremote: Compressing objects:  83% (130/156)[Kremote: Compressing objects:  84% (132/156)[Kremote: Compressing objects:  85% (133/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  86% (135/156)[Kremote: Compressing objects:  87% (136/156)[Kremote: Compressing objects:  88% (138/156)[Kremote: Compressing objects:  89% (139/156)[Kremote: Compressing objects:  90% (141/156)[Kremote: Compressing objects:  91% (142/156)[Kremote: Compressing objects:  92% (144/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  93% (146/156)[Kremote: Compressing objects:  94% (147/156)[Kremote: Compressing objects:  95% (149/156)[Kremote: Compressing objects:  96% (150/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  97% (152/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects:  98% (153/156)[Kremote: Compressing objects:  99% (155/156)[K
+ DEBUG [24ae458b] 	remote: Compressing objects: 100% (156/156)[Kremote: Compressing objects: 100% (156/156), done.[K
+ DEBUG [24ae458b] 	Receiving objects:   0% (1/233)   
+ DEBUG [24ae458b] 	Receiving objects:   1% (3/233)   
+ DEBUG [24ae458b] 	Receiving objects:   2% (5/233)   
+ DEBUG [24ae458b] 	Receiving objects:   3% (7/233)   
+ DEBUG [24ae458b] 	Receiving objects:   4% (10/233)   
+ DEBUG [24ae458b] 	Receiving objects:   5% (12/233)   
+ DEBUG [24ae458b] 	Receiving objects:   6% (14/233)   
+ DEBUG [24ae458b] 	Receiving objects:   7% (17/233)   
+ DEBUG [24ae458b] 	Receiving objects:   8% (19/233)   
+ DEBUG [24ae458b] 	Receiving objects:   9% (21/233)   
+ DEBUG [24ae458b] 	Receiving objects:  10% (24/233)   
+ DEBUG [24ae458b] 	Receiving objects:  11% (26/233)   
+ DEBUG [24ae458b] 	Receiving objects:  12% (28/233)   
+ DEBUG [24ae458b] 	Receiving objects:  13% (31/233)   
+ DEBUG [24ae458b] 	Receiving objects:  14% (33/233)   
+ DEBUG [24ae458b] 	Receiving objects:  15% (35/233)   
+ DEBUG [24ae458b] 	Receiving objects:  16% (38/233)   
+ DEBUG [24ae458b] 	Receiving objects:  17% (40/233)   
+ DEBUG [24ae458b] 	Receiving objects:  18% (42/233)   
+ DEBUG [24ae458b] 	Receiving objects:  19% (45/233)   
+ DEBUG [24ae458b] 	Receiving objects:  20% (47/233)   
+ DEBUG [24ae458b] 	Receiving objects:  21% (49/233)   
+ DEBUG [24ae458b] 	Receiving objects:  22% (52/233)   
+ DEBUG [24ae458b] 	Receiving objects:  23% (54/233)   
+ DEBUG [24ae458b] 	Receiving objects:  24% (56/233)   
+ DEBUG [24ae458b] 	Receiving objects:  25% (59/233)   
+ DEBUG [24ae458b] 	Receiving objects:  26% (61/233)   
+ DEBUG [24ae458b] 	Receiving objects:  27% (63/233)   
+ DEBUG [24ae458b] 	Receiving objects:  28% (66/233)   
+ DEBUG [24ae458b] 	Receiving objects:  29% (68/233)   
+ DEBUG [24ae458b] 	Receiving objects:  30% (70/233)   
+ DEBUG [24ae458b] 	Receiving objects:  31% (73/233)   
+ DEBUG [24ae458b] 	Receiving objects:  32% (75/233)   
+ DEBUG [24ae458b] 	Receiving objects:  33% (77/233)   
+ DEBUG [24ae458b] 	Receiving objects:  34% (80/233)   
+ DEBUG [24ae458b] 	Receiving objects:  35% (82/233)   
+ DEBUG [24ae458b] 	Receiving objects:  36% (84/233)   
+ DEBUG [24ae458b] 	Receiving objects:  37% (87/233)   
+ DEBUG [24ae458b] 	Receiving objects:  38% (89/233)   
+ DEBUG [24ae458b] 	Receiving objects:  39% (91/233)   
+ DEBUG [24ae458b] 	Receiving objects:  40% (94/233)   
+ DEBUG [24ae458b] 	Receiving objects:  41% (96/233)   
+ DEBUG [24ae458b] 	Receiving objects:  42% (98/233)   
+ DEBUG [24ae458b] 	Receiving objects:  43% (101/233)   
+ DEBUG [24ae458b] 	Receiving objects:  44% (103/233)   
+ DEBUG [24ae458b] 	Receiving objects:  45% (105/233)   
+ DEBUG [24ae458b] 	Receiving objects:  46% (108/233)   
+ DEBUG [24ae458b] 	Receiving objects:  47% (110/233)   
+ DEBUG [24ae458b] 	Receiving objects:  48% (112/233)   
+ DEBUG [24ae458b] 	Receiving objects:  49% (115/233)   
+ DEBUG [24ae458b] 	Receiving objects:  50% (117/233)   
+ DEBUG [24ae458b] 	Receiving objects:  51% (119/233)   
+ DEBUG [24ae458b] 	Receiving objects:  52% (122/233)   
+ DEBUG [24ae458b] 	Receiving objects:  53% (124/233)   
+ DEBUG [24ae458b] 	Receiving objects:  54% (126/233)   
+ DEBUG [24ae458b] 	Receiving objects:  55% (129/233)   
+ DEBUG [24ae458b] 	remote: Total 233 (delta 91), reused 192 (delta 50), pack-reused 0[K
+ DEBUG [24ae458b] 	
+ DEBUG [24ae458b] 	Receiving objects:  56% (131/233)   
+ DEBUG [24ae458b] 	Receiving objects:  57% (133/233)   
+ DEBUG [24ae458b] 	Receiving objects:  58% (136/233)   
+ DEBUG [24ae458b] 	Receiving objects:  59% (138/233)   
+ DEBUG [24ae458b] 	Receiving objects:  60% (140/233)   
+ DEBUG [24ae458b] 	Receiving objects:  61% (143/233)   
+ DEBUG [24ae458b] 	Receiving objects:  62% (145/233)   
+ DEBUG [24ae458b] 	Receiving objects:  63% (147/233)   
+ DEBUG [24ae458b] 	Receiving objects:  64% (150/233)   
+ DEBUG [24ae458b] 	Receiving objects:  65% (152/233)   
+ DEBUG [24ae458b] 	Receiving objects:  66% (154/233)   
+ DEBUG [24ae458b] 	Receiving objects:  67% (157/233)   
+ DEBUG [24ae458b] 	Receiving objects:  68% (159/233)   
+ DEBUG [24ae458b] 	Receiving objects:  69% (161/233)   
+ DEBUG [24ae458b] 	Receiving objects:  70% (164/233)   
+ DEBUG [24ae458b] 	Receiving objects:  71% (166/233)   
+ DEBUG [24ae458b] 	Receiving objects:  72% (168/233)   
+ DEBUG [24ae458b] 	Receiving objects:  73% (171/233)   
+ DEBUG [24ae458b] 	Receiving objects:  74% (173/233)   
+ DEBUG [24ae458b] 	Receiving objects:  75% (175/233)   
+ DEBUG [24ae458b] 	Receiving objects:  76% (178/233)   
+ DEBUG [24ae458b] 	Receiving objects:  77% (180/233)   
+ DEBUG [24ae458b] 	Receiving objects:  78% (182/233)   
+ DEBUG [24ae458b] 	Receiving objects:  79% (185/233)   
+ DEBUG [24ae458b] 	Receiving objects:  80% (187/233)   
+ DEBUG [24ae458b] 	Receiving objects:  81% (189/233)   
+ DEBUG [24ae458b] 	Receiving objects:  82% (192/233)   
+ DEBUG [24ae458b] 	Receiving objects:  83% (194/233)   
+ DEBUG [24ae458b] 	Receiving objects:  84% (196/233)   
+ DEBUG [24ae458b] 	Receiving objects:  85% (199/233)   
+ DEBUG [24ae458b] 	Receiving objects:  86% (201/233)   
+ DEBUG [24ae458b] 	Receiving objects:  87% (203/233)   
+ DEBUG [24ae458b] 	Receiving objects:  88% (206/233)   
+ DEBUG [24ae458b] 	Receiving objects:  89% (208/233)   
+ DEBUG [24ae458b] 	Receiving objects:  90% (210/233)   
+ DEBUG [24ae458b] 	Receiving objects:  91% (213/233)   
+ DEBUG [24ae458b] 	Receiving objects:  92% (215/233)   
+ DEBUG [24ae458b] 	Receiving objects:  93% (217/233)   
+ DEBUG [24ae458b] 	Receiving objects:  94% (220/233)   
+ DEBUG [24ae458b] 	Receiving objects:  95% (222/233)   
+ DEBUG [24ae458b] 	Receiving objects:  96% (224/233)   
+ DEBUG [24ae458b] 	Receiving objects:  97% (227/233)   
+ DEBUG [24ae458b] 	Receiving objects:  98% (229/233)   
+ DEBUG [24ae458b] 	Receiving objects:  99% (231/233)   
+ DEBUG [24ae458b] 	Receiving objects: 100% (233/233)   
+ DEBUG [24ae458b] 	Receiving objects: 100% (233/233), 240.91 KiB | 9.64 MiB/s, done.
+ DEBUG [24ae458b] 	
+ DEBUG [24ae458b] 	Resolving deltas:   0% (0/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  12% (11/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  16% (15/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  17% (16/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  18% (17/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  25% (23/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  28% (26/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  35% (32/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  36% (33/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  39% (36/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  47% (43/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  48% (44/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  51% (47/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  53% (49/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  56% (51/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  58% (53/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  61% (56/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  82% (75/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  85% (78/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  86% (79/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  94% (86/91)   
+ DEBUG [24ae458b] 	Resolving deltas:  95% (87/91)   
+ DEBUG [24ae458b] 	Resolving deltas: 100% (91/91)   
+ DEBUG [24ae458b] 	Resolving deltas: 100% (91/91), done.
+ DEBUG [24ae458b] 	
+  INFO [24ae458b] Finished in 1.328 seconds with exit status 0 (successful).
+ DEBUG [686df1c9] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [686df1c9] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [686df1c9] Finished in 0.485 seconds with exit status 0 (successful).
+  INFO [b9679642] Running /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git as deploy@network.bgmp.cl
+ DEBUG [b9679642] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git )
+  INFO [b9679642] Finished in 0.547 seconds with exit status 0 (successful).
+  INFO [2e513c0f] Running /usr/bin/env git remote update --prune as deploy@network.bgmp.cl
+ DEBUG [2e513c0f] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2e513c0f] 	Fetching origin
+ DEBUG [2e513c0f] 	
+  INFO [2e513c0f] Finished in 0.991 seconds with exit status 0 (successful).
+ DEBUG [5d33208a] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [5d33208a] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [5d33208a] Finished in 0.474 seconds with exit status 0 (successful).
+  INFO [fc3060be] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429222737 as deploy@network.bgmp.cl
+ DEBUG [fc3060be] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429222737 )
+  INFO [fc3060be] Finished in 0.518 seconds with exit status 0 (successful).
+  INFO [58b347fd] Running /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429222737 as deploy@network.bgmp.cl
+ DEBUG [58b347fd] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f740bc0ecf924875f793.sh" ; /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429222737 )
+ DEBUG [58b347fd] 	fatal: Not a valid object name
+ DEBUG [58b347fd] 	
+ DEBUG [58b347fd] 	tar: 
+ DEBUG [58b347fd] 	This does not look like a tar archive
+ DEBUG [58b347fd] 	
+ DEBUG [58b347fd] 	tar: 
+ DEBUG [58b347fd] 	Exiting with failure status due to previous errors
+ DEBUG [58b347fd] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-29 18:30:09 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b3f9f907] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/ as deploy@network.bgmp.cl
+ DEBUG [b3f9f907] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/
+  INFO [b3f9f907] Finished in 2.536 seconds with exit status 0 (successful).
+ DEBUG Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [298a01f8] Running /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh as deploy@network.bgmp.cl
+ DEBUG [298a01f8] Command: /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh
+  INFO [298a01f8] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [ee16be8f] Running /usr/bin/env mkdir -p /tmp as deploy@network.bgmp.cl
+ DEBUG [ee16be8f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ee16be8f] Finished in 0.529 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2985a91067d3f4b36deb.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2985a91067d3f4b36deb.sh 100.0%
+  INFO [04f3405f] Running /usr/bin/env chmod 700 /tmp/git-ssh-2985a91067d3f4b36deb.sh as deploy@network.bgmp.cl
+ DEBUG [04f3405f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-2985a91067d3f4b36deb.sh
+  INFO [04f3405f] Finished in 0.548 seconds with exit status 0 (successful).
+  INFO [411ae4ac] Running /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD as deploy@network.bgmp.cl
+ DEBUG [411ae4ac] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2985a91067d3f4b36deb.sh" ; /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD )
+ DEBUG [411ae4ac] 	03914e09f19841a2c617b7b2bdaf76668f8eb6eb
+ DEBUG [411ae4ac] 		
+ DEBUG [411ae4ac] 	HEAD
+  INFO [411ae4ac] Finished in 0.965 seconds with exit status 0 (successful).
+  INFO [cc6b2eb0] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases as deploy@network.bgmp.cl
+ DEBUG [cc6b2eb0] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases
+  INFO [cc6b2eb0] Finished in 0.474 seconds with exit status 0 (successful).
+  INFO [f530a5a4] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
+ DEBUG [f530a5a4] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
+  INFO [f530a5a4] Finished in 0.520 seconds with exit status 0 (successful).
+  INFO [0c03ddc9] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared as deploy@network.bgmp.cl
+ DEBUG [0c03ddc9] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared
+  INFO [0c03ddc9] Finished in 0.547 seconds with exit status 0 (successful).
+ DEBUG [3108e5f6] Running [ -f /home/deploy/bgmp.cl/shared/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [3108e5f6] Command: [ -f /home/deploy/bgmp.cl/shared/Caddyfile ]
+ DEBUG [3108e5f6] Finished in 0.533 seconds with exit status 0 (successful).
+ DEBUG [b2094311] Running [ -f /home/deploy/bgmp.cl/current/REVISION ] as deploy@network.bgmp.cl
+ DEBUG [b2094311] Command: [ -f /home/deploy/bgmp.cl/current/REVISION ]
+ DEBUG [b2094311] Finished in 0.528 seconds with exit status 1 (failed).
+ DEBUG [96de86a5] Running [ -f /home/deploy/bgmp.cl/repo/HEAD ] as deploy@network.bgmp.cl
+ DEBUG [96de86a5] Command: [ -f /home/deploy/bgmp.cl/repo/HEAD ]
+ DEBUG [96de86a5] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/bgmp.cl/repo
+ DEBUG [b429c5ca] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [b429c5ca] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [b429c5ca] Finished in 0.518 seconds with exit status 0 (successful).
+  INFO [f6ade390] Running /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git as deploy@network.bgmp.cl
+ DEBUG [f6ade390] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2985a91067d3f4b36deb.sh" ; /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git )
+  INFO [f6ade390] Finished in 0.533 seconds with exit status 0 (successful).
+  INFO [1159a399] Running /usr/bin/env git remote update --prune as deploy@network.bgmp.cl
+ DEBUG [1159a399] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2985a91067d3f4b36deb.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1159a399] 	Fetching origin
+ DEBUG [1159a399] 	
+  INFO [1159a399] Finished in 0.988 seconds with exit status 0 (successful).
+ DEBUG [9613ae02] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [9613ae02] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [9613ae02] Finished in 0.485 seconds with exit status 0 (successful).
+  INFO [8f4d1fc6] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429223019 as deploy@network.bgmp.cl
+ DEBUG [8f4d1fc6] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2985a91067d3f4b36deb.sh" ; /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429223019 )
+  INFO [8f4d1fc6] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [eae019fb] Running /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429223019 as deploy@network.bgmp.cl
+ DEBUG [eae019fb] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2985a91067d3f4b36deb.sh" ; /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429223019 )
+ DEBUG [eae019fb] 	fatal: Not a valid object name
+ DEBUG [eae019fb] 	
+ DEBUG [eae019fb] 	tar: 
+ DEBUG [eae019fb] 	This does not look like a tar archive
+ DEBUG [eae019fb] 	
+ DEBUG [eae019fb] 	tar: 
+ DEBUG [eae019fb] 	Exiting with failure status due to previous errors
+ DEBUG [eae019fb] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-29 18:42:15 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8758ca77] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/ as deploy@network.bgmp.cl
+ DEBUG [8758ca77] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/
+  INFO [8758ca77] Finished in 2.694 seconds with exit status 0 (successful).
+ DEBUG Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [48c4990c] Running /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh as deploy@network.bgmp.cl
+ DEBUG [48c4990c] Command: /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh
+  INFO [48c4990c] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [8d6760b4] Running /usr/bin/env mkdir -p /tmp as deploy@network.bgmp.cl
+ DEBUG [8d6760b4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8d6760b4] Finished in 0.528 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5ca02d53d3d1aca83487.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5ca02d53d3d1aca83487.sh 100.0%
+  INFO [6dcdf72b] Running /usr/bin/env chmod 700 /tmp/git-ssh-5ca02d53d3d1aca83487.sh as deploy@network.bgmp.cl
+ DEBUG [6dcdf72b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5ca02d53d3d1aca83487.sh
+  INFO [6dcdf72b] Finished in 0.519 seconds with exit status 0 (successful).
+  INFO [e310148c] Running /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD as deploy@network.bgmp.cl
+ DEBUG [e310148c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ca02d53d3d1aca83487.sh" ; /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD )
+ DEBUG [e310148c] 	Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+ DEBUG [e310148c] 	
+ DEBUG [e310148c] 	03914e09f19841a2c617b7b2bdaf76668f8eb6eb
+ DEBUG [e310148c] 		HEAD
+  INFO [e310148c] Finished in 1.002 seconds with exit status 0 (successful).
+  INFO [dda68300] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases as deploy@network.bgmp.cl
+ DEBUG [dda68300] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases
+  INFO [dda68300] Finished in 0.502 seconds with exit status 0 (successful).
+  INFO [01dfe096] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
+ DEBUG [01dfe096] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
