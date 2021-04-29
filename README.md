@@ -1,4 +1,4 @@
-## bgmp.cl [![deploy](https://github.com/BGMP/bgmp.cl/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/BGMP/bgmp.cl/actions/workflows/deploy.yml)
+# bgmp.cl [![deploy](https://github.com/BGMP/bgmp.cl/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/BGMP/bgmp.cl/actions/workflows/deploy.yml)
 
 My personal website, maven repository, and perhaps a blog in the near future.
 
