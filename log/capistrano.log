@@ -534,3 +534,190 @@
   INFO [dda68300] Finished in 0.502 seconds with exit status 0 (successful).
   INFO [01dfe096] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
  DEBUG [01dfe096] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-29 18:44:37 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e6567d93] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/ as deploy@network.bgmp.cl
+ DEBUG [e6567d93] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/rvm1scripts/
+  INFO [e6567d93] Finished in 2.597 seconds with exit status 0 (successful).
+ DEBUG Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [96da3306] Running /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh as deploy@network.bgmp.cl
+ DEBUG [96da3306] Command: /usr/bin/env chmod +x /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh
+  INFO [96da3306] Finished in 0.537 seconds with exit status 0 (successful).
+  INFO [9c9ec2bc] Running /usr/bin/env mkdir -p /tmp as deploy@network.bgmp.cl
+ DEBUG [9c9ec2bc] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9c9ec2bc] Finished in 0.516 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-dde5268c2f3fd803248f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-dde5268c2f3fd803248f.sh 100.0%
+  INFO [553ada8f] Running /usr/bin/env chmod 700 /tmp/git-ssh-dde5268c2f3fd803248f.sh as deploy@network.bgmp.cl
+ DEBUG [553ada8f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-dde5268c2f3fd803248f.sh
+  INFO [553ada8f] Finished in 0.522 seconds with exit status 0 (successful).
+  INFO [84924ae9] Running /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD as deploy@network.bgmp.cl
+ DEBUG [84924ae9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env git ls-remote git@github.com:BGMP/bgmp.cl.git HEAD )
+ DEBUG [84924ae9] 	03914e09f19841a2c617b7b2bdaf76668f8eb6eb
+ DEBUG [84924ae9] 		HEAD
+  INFO [84924ae9] Finished in 0.976 seconds with exit status 0 (successful).
+  INFO [4f459cb2] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases as deploy@network.bgmp.cl
+ DEBUG [4f459cb2] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared /home/deploy/bgmp.cl/releases
+  INFO [4f459cb2] Finished in 0.507 seconds with exit status 0 (successful).
+  INFO [4ef3c139] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle as deploy@network.bgmp.cl
+ DEBUG [4ef3c139] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared/.bundle
+  INFO [4ef3c139] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [6588de74] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared as deploy@network.bgmp.cl
+ DEBUG [6588de74] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/shared
+  INFO [6588de74] Finished in 0.518 seconds with exit status 0 (successful).
+ DEBUG [e6ddd758] Running [ -f /home/deploy/bgmp.cl/shared/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [e6ddd758] Command: [ -f /home/deploy/bgmp.cl/shared/Caddyfile ]
+ DEBUG [e6ddd758] Finished in 0.505 seconds with exit status 0 (successful).
+ DEBUG [409f830a] Running [ -f /home/deploy/bgmp.cl/current/REVISION ] as deploy@network.bgmp.cl
+ DEBUG [409f830a] Command: [ -f /home/deploy/bgmp.cl/current/REVISION ]
+ DEBUG [409f830a] Finished in 0.504 seconds with exit status 1 (failed).
+ DEBUG [0e4e203f] Running [ -f /home/deploy/bgmp.cl/repo/HEAD ] as deploy@network.bgmp.cl
+ DEBUG [0e4e203f] Command: [ -f /home/deploy/bgmp.cl/repo/HEAD ]
+ DEBUG [0e4e203f] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/bgmp.cl/repo
+ DEBUG [231b90c9] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [231b90c9] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [231b90c9] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [237497e1] Running /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git as deploy@network.bgmp.cl
+ DEBUG [237497e1] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env git remote set-url origin git@github.com:BGMP/bgmp.cl.git )
+  INFO [237497e1] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [c9d341be] Running /usr/bin/env git remote update --prune as deploy@network.bgmp.cl
+ DEBUG [c9d341be] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c9d341be] 	Fetching origin
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	remote: Enumerating objects: 16, done.[K
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	remote: Counting objects:   6% (1/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  12% (2/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  18% (3/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  25% (4/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  31% (5/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  37% (6/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  43% (7/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  50% (8/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  56% (9/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  62% (10/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  68% (11/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  75% (12/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  81% (13/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  87% (14/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects:  93% (15/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects: 100% (16/16)[K
+ DEBUG [c9d341be] 	remote: Counting objects: 100% (16/16), done.[K
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	remote: Compressing objects:  11% (1/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  22% (2/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  33% (3/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  44% (4/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  55% (5/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  66% (6/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  77% (7/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects:  88% (8/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects: 100% (9/9)[K
+ DEBUG [c9d341be] 	remote: Compressing objects: 100% (9/9), done.[K
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0[K
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	Unpacking objects:   8% (1/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  16% (2/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  25% (3/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  33% (4/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  41% (5/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  50% (6/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  58% (7/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  66% (8/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  75% (9/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  83% (10/12)   
+ DEBUG [c9d341be] 	Unpacking objects:  91% (11/12)   
+ DEBUG [c9d341be] 	Unpacking objects: 100% (12/12)   
+ DEBUG [c9d341be] 	Unpacking objects: 100% (12/12), done.
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	From github.com:BGMP/bgmp.cl
+ DEBUG [c9d341be] 	
+ DEBUG [c9d341be] 	 * [new branch]      production -> production
+ DEBUG [c9d341be] 	
+  INFO [c9d341be] Finished in 1.149 seconds with exit status 0 (successful).
+ DEBUG [3984fcb6] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [3984fcb6] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [3984fcb6] Finished in 0.492 seconds with exit status 0 (successful).
+  INFO [893392c3] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447 as deploy@network.bgmp.cl
+ DEBUG [893392c3] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447 )
+  INFO [893392c3] Finished in 0.524 seconds with exit status 0 (successful).
+  INFO [5c8ccbbc] Running /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429224447 as deploy@network.bgmp.cl
+ DEBUG [5c8ccbbc] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env git archive production | /usr/bin/env tar -x -f - -C /home/deploy/bgmp.cl/releases/20210429224447 )
+  INFO [5c8ccbbc] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [9eacc1da] Running if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [9eacc1da] Command: if test ! -d /home/deploy/bgmp.cl/repo; then echo "Directory does not exist '/home/deploy/bgmp.cl/repo'" 1>&2; false; fi
+ DEBUG [9eacc1da] Finished in 0.531 seconds with exit status 0 (successful).
+ DEBUG [6f819b98] Running /usr/bin/env git rev-list --max-count=1 production as deploy@network.bgmp.cl
+ DEBUG [6f819b98] Command: cd /home/deploy/bgmp.cl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dde5268c2f3fd803248f.sh" ; /usr/bin/env git rev-list --max-count=1 production )
+ DEBUG [6f819b98] 	5d7872531731e78b88f7a9e5029aabb297167b04
+ DEBUG [6f819b98] 	
+ DEBUG [6f819b98] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [abbe2a88] Running if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [abbe2a88] Command: if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi
+ DEBUG [abbe2a88] Finished in 0.501 seconds with exit status 0 (successful).
+  INFO [c0cf01c2] Running /usr/bin/env echo "5d7872531731e78b88f7a9e5029aabb297167b04" > REVISION as deploy@network.bgmp.cl
+ DEBUG [c0cf01c2] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /usr/bin/env echo "5d7872531731e78b88f7a9e5029aabb297167b04" > REVISION
+  INFO [c0cf01c2] Finished in 0.533 seconds with exit status 0 (successful).
+  INFO [3054a97a] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447 as deploy@network.bgmp.cl
+ DEBUG [3054a97a] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447
+  INFO [3054a97a] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [d5022af7] Running [ -L /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [d5022af7] Command: [ -L /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile ]
+ DEBUG [d5022af7] Finished in 0.506 seconds with exit status 1 (failed).
+ DEBUG [93280697] Running [ -f /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile ] as deploy@network.bgmp.cl
+ DEBUG [93280697] Command: [ -f /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile ]
+ DEBUG [93280697] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO [f9dc969b] Running /usr/bin/env rm /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile as deploy@network.bgmp.cl
+ DEBUG [f9dc969b] Command: /usr/bin/env rm /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile
+  INFO [f9dc969b] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [0b1d396f] Running /usr/bin/env ln -s /home/deploy/bgmp.cl/shared/Caddyfile /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile as deploy@network.bgmp.cl
+ DEBUG [0b1d396f] Command: /usr/bin/env ln -s /home/deploy/bgmp.cl/shared/Caddyfile /home/deploy/bgmp.cl/releases/20210429224447/Caddyfile
+  INFO [0b1d396f] Finished in 0.536 seconds with exit status 0 (successful).
+  INFO [95d6a8b2] Running /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447 as deploy@network.bgmp.cl
+ DEBUG [95d6a8b2] Command: /usr/bin/env mkdir -p /home/deploy/bgmp.cl/releases/20210429224447
+  INFO [95d6a8b2] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [81e902ac] Running [ -L /home/deploy/bgmp.cl/releases/20210429224447/.bundle ] as deploy@network.bgmp.cl
+ DEBUG [81e902ac] Command: [ -L /home/deploy/bgmp.cl/releases/20210429224447/.bundle ]
+ DEBUG [81e902ac] Finished in 0.537 seconds with exit status 1 (failed).
+ DEBUG [4d3fed2f] Running [ -d /home/deploy/bgmp.cl/releases/20210429224447/.bundle ] as deploy@network.bgmp.cl
+ DEBUG [4d3fed2f] Command: [ -d /home/deploy/bgmp.cl/releases/20210429224447/.bundle ]
+ DEBUG [4d3fed2f] Finished in 0.523 seconds with exit status 1 (failed).
+  INFO [79695311] Running /usr/bin/env ln -s /home/deploy/bgmp.cl/shared/.bundle /home/deploy/bgmp.cl/releases/20210429224447/.bundle as deploy@network.bgmp.cl
+ DEBUG [79695311] Command: /usr/bin/env ln -s /home/deploy/bgmp.cl/shared/.bundle /home/deploy/bgmp.cl/releases/20210429224447/.bundle
+  INFO [79695311] Finished in 0.537 seconds with exit status 0 (successful).
+ DEBUG [aa094975] Running if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [aa094975] Command: if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi
+ DEBUG [aa094975] Finished in 0.533 seconds with exit status 0 (successful).
+  INFO [f0c0b617] Running /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local deployment true as deploy@network.bgmp.cl
+ DEBUG [f0c0b617] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local deployment true
+  INFO [f0c0b617] Finished in 1.893 seconds with exit status 0 (successful).
+  INFO [ee4b7242] Running /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local path /home/deploy/bgmp.cl/shared/bundle as deploy@network.bgmp.cl
+ DEBUG [ee4b7242] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local path /home/deploy/bgmp.cl/shared/bundle
+  INFO [ee4b7242] Finished in 1.926 seconds with exit status 0 (successful).
+  INFO [3c00554e] Running /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local without development:test as deploy@network.bgmp.cl
+ DEBUG [3c00554e] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle config --local without development:test
+  INFO [3c00554e] Finished in 2.016 seconds with exit status 0 (successful).
+ DEBUG [960185cf] Running if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi as deploy@network.bgmp.cl
+ DEBUG [960185cf] Command: if test ! -d /home/deploy/bgmp.cl/releases/20210429224447; then echo "Directory does not exist '/home/deploy/bgmp.cl/releases/20210429224447'" 1>&2; false; fi
+ DEBUG [960185cf] Finished in 0.538 seconds with exit status 0 (successful).
+ DEBUG [5ba83753] Running /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle check as deploy@network.bgmp.cl
+ DEBUG [5ba83753] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle check
+ DEBUG [5ba83753] 	[31mYour bundle only supports platforms ["x64-mingw32"] but your local platform is
+ DEBUG [5ba83753] 	
+ DEBUG [5ba83753] 	x86_64-linux. Add the current platform to the lockfile with `bundle lock
+ DEBUG [5ba83753] 	
+ DEBUG [5ba83753] 	--add-platform x86_64-linux` and try again.[0m
+ DEBUG [5ba83753] 	
+ DEBUG [5ba83753] Finished in 2.026 seconds with exit status 16 (failed).
+  INFO [a2bd1406] Running /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle install --jobs 4 --quiet as deploy@network.bgmp.cl
+ DEBUG [a2bd1406] Command: cd /home/deploy/bgmp.cl/releases/20210429224447 && /home/deploy/bgmp.cl/rvm1scripts/rvm-auto.sh 2.6.6 bundle install --jobs 4 --quiet
+ DEBUG [a2bd1406] 	[31mYour bundle only supports platforms ["x64-mingw32"] but your local platform is
+ DEBUG [a2bd1406] 	
+ DEBUG [a2bd1406] 	x86_64-linux. Add the current platform to the lockfile with `bundle lock
+ DEBUG [a2bd1406] 	
+ DEBUG [a2bd1406] 	--add-platform x86_64-linux` and try again.[0m
+ DEBUG [a2bd1406] 	
