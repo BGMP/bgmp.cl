@@ -15,3 +15,6 @@ repo/
 build/
 .sass-cache/
 config/amazon.yml
+
+# Capistrano
+log/capistrano.log
